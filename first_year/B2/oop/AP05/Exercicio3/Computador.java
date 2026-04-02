@@ -2,6 +2,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Computador {
+
     private String marca;
     private List<Peca> pecas;
 
@@ -27,5 +28,10 @@ public class Computador {
         for (Peca peca : pecas) {
             System.out.println("- " + peca.getNome());
         }
+    }
+
+    @Override
+    public String toString() {
+        return "Computador: " + this.marca + "\nPecas:\n";
     }
 }
