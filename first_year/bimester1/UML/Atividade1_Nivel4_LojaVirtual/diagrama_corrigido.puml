@@ -1,0 +1,30 @@
+@startuml Loja Virtual - Corrigido
+
+left to right direction
+skinparam actorStyle awesome
+
+actor "Cliente" as cliente
+actor "Gerente" as gerente
+
+rectangle "Sistema Loja Virtual" {
+    usecase "Fazer Login" as UC1
+    usecase "Autenticar Usuário" as UC2
+    usecase "Realizar Compra" as UC3
+    usecase "Solicitar Devolução" as UC4
+    usecase "Aprovar Devolução" as UC5
+    usecase "Emitir Nota Fiscal" as UC6
+}
+
+cliente --> UC1
+cliente --> UC3
+cliente --> UC4
+
+gerente --> UC1
+gerente --> UC5
+
+UC1 ..> UC2 : <<include>>
+UC3 ..> UC1 : <<include>>
+UC3 ..> UC6 : <<include>>
+UC5 ..> UC1 : <<include>>
+
+@enduml
