@@ -32,6 +32,8 @@ public class Computador {
 
     @Override
     public String toString() {
-        return "Computador: " + this.marca + "\nPecas:\n";
+        return (
+            "Computador: " + this.marca + "\nPecas:\n" + this.pecas.toString()
+        );
     }
 }
