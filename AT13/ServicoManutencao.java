@@ -16,7 +16,7 @@ public class ServicoManutencao extends Servico implements Executavel {
     public void exibirDados() {
         System.out.println("Serviço de Manutenção");
         System.out.println("Cliente: " + getClient_name());
-        System.out.println("Valor Base: " + getValor_base());
+        System.out.println("Valor Baseeee: " + getValor_base());
         System.out.println("Prioridade: " + getPrioridade());
     }
 
