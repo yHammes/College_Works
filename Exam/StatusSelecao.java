@@ -1,0 +1,1 @@
+public enum StatusSelecao {CLASSIFICADA, ELIMINADA, EM_DISPUTA, CAMPEA}
